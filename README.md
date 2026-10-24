@@ -1,29 +1,25 @@
 # SAALKOO STORE — Born for Greatness / Concept Preview
 
-Next.js 15 concept-catalog website for the artist SAALKOO.
+Next.js 15 concept catalog for the artist SAALKOO: 15 product concepts in 5 categories.
+No prices, cart, checkout, payments or orders (preview only).
+
+## Structure
+- `app/page.tsx`   – the page (15 products, filters, music, story, FAQ)
+- `app/layout.tsx` – metadata, SEO
+- `app/style.css`  – styles
+- `app/robots.ts`, `app/sitemap.ts`
+- `scripts/check-preview.mjs` – smoke checks (`npm run test:preview`)
 
 ## Run
-
 ```bash
 npm install
+npm run test:preview
 npm run build
-npm run dev
+npm run dev   # http://localhost:3000
 ```
 
-Visit http://localhost:3000.
-
-## Scope
-
-- 15 illustrated **concept** product cards, across apparel, eyewear, music, accessories, collectibles.
-- Category filtering, mobile navigation, responsive layouts, album and artist story sections.
-- No prices, shopping cart, checkout, payments, orders, or preorder forms.
-- Concept illustrations are CSS-based placeholders, **not product photographs** or final manufacturing designs.
-- Fortress silhouette is stylized CSS artwork, not a licensed photo or exact historical rendering.
+## Deploy (Vercel)
+Commit these files to the GitHub repo connected to Vercel (replace old files, delete the old `index.html`, root `page.tsx`/`layout.tsx` and the stray `.zip` files). Vercel detects Next.js automatically. Check the Preview deployment before promoting to production.
 
 ## Before launch
-
-Confirm rights to the SAALKOO name, music and any future images; verify product descriptions; prepare appropriate business/legal notices and privacy disclosures before enabling commerce. This is not a legal compliance certification.
-
-## Deployment
-
-This ZIP does not deploy automatically. Back up the existing GitHub repository before replacing source files. Verify `npm run build` and browser rendering, then commit to the existing repository and let its connected Vercel project deploy. Do not upload `node_modules`, `.next`, or secrets.
+Confirm rights to the SAALKOO name, music and images; add privacy/legal notices before enabling any commerce.
