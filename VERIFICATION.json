@@ -1,0 +1,20 @@
+{
+  "state": "PARTIALLY VERIFIED",
+  "products": 15,
+  "unique_embedded_product_images": 12,
+  "checks": [
+    "JavaScript syntax",
+    "catalog rendering with DOM stub",
+    "category filtering",
+    "empty search",
+    "bag totals",
+    "five local storage inputs"
+  ],
+  "not_verified": [
+    "browser layout",
+    "production deployment",
+    "Stripe account",
+    "Revolut payout destination"
+  ],
+  "commerce": "Preview only. Products and prices require merchant confirmation before checkout implementation."
+}
